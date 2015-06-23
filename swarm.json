@@ -1,0 +1,18 @@
+{
+  "app_name": "nancy-app",
+  "services": [
+    {
+      "service_name": "nancy-service",
+      "components": [
+        {
+          "component_name": "nancy",
+          "image": "registry.giantswarm.io/luebken/nancy",
+          "ports": [8080],
+          "domains": {
+            "nancy-luebken.gigantic.io": 8080
+          }
+        }
+      ]
+    }
+  ]
+}
